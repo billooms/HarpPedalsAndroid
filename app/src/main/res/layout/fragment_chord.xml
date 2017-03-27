@@ -1,0 +1,66 @@
+<RelativeLayout
+    android:id="@+id/chord_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.billooms.harppedals.keysignature.KeySignatureFragment">
+
+    <Spinner style="@style/mySpinner" android:id="@+id/rootSpinner"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"/>
+
+    <Spinner style="@style/mySpinner" android:id="@+id/sharpFlatSpinner"
+             android:layout_alignBaseline="@+id/rootSpinner"
+             android:layout_toRightOf="@+id/rootSpinner"
+             android:layout_toEndOf="@+id/rootSpinner"/>
+
+    <Spinner style="@style/mySpinner" android:id="@+id/triadSpinner"
+             android:layout_alignBaseline="@+id/rootSpinner"
+             android:layout_toRightOf="@+id/sharpFlatSpinner"
+             android:layout_toEndOf="@+id/sharpFlatSpinner"/>
+
+    <TextView style="@style/myText" android:id="@+id/chordNameText" android:text="@string/chordNameText"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"
+              android:layout_below="@+id/rootSpinner"/>
+
+    <CheckBox style="@style/myCheckBox" android:id="@+id/add2Button" android:text="@string/add2Button"
+              android:layout_below="@+id/chordNameText"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"/>
+
+    <CheckBox style="@style/myCheckBox" android:id="@+id/add4Button" android:text="@string/add4Button"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"
+              android:layout_below="@+id/add2Button"/>
+
+    <CheckBox style="@style/myCheckBox" android:id="@+id/sus4Button" android:text="@string/sus4Button"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"
+              android:layout_below="@+id/add4Button"/>
+
+    <CheckBox style="@style/myCheckBox" android:id="@+id/add6Button" android:text="@string/add6Button"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"
+              android:layout_below="@+id/sus4Button"/>
+
+    <Button style="@style/myButton" android:id="@+id/playButton" android:text="@string/playButton"
+            android:layout_below="@+id/add6Button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <TextView style="@style/myText" android:id="@+id/notesText" android:text="@string/notesText"
+              android:layout_alignBaseline="@+id/playButton"
+              android:layout_alignBottom="@+id/playButton"
+              android:layout_toRightOf="@+id/playButton"
+              android:layout_toEndOf="@+id/playButton"/>
+
+    <Button style="@style/myButton" android:id="@+id/setChordButton" android:text="@string/setChordButton"
+            android:layout_below="@+id/playButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

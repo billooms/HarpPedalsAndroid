@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="pedalGroup">
+        <item name="android:layout_width">35dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_margin">5dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="pedalGroupLarge">
+        <item name="android:layout_width">60dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_margin">5dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="pedalButton" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="pedalButtonLarge" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+     <style name="mySpinner" parent="@android:style/TextAppearance">
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_margin">10dp</item>
+         <item name="android:background">@drawable/slim_spinner_normal</item>
+     </style>
+
+     <style name="myButton" parent="@android:style/TextAppearance">
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_margin">10dp</item>
+         <item name="android:textSize">20sp</item>
+         <item name="android:textAllCaps">false</item>
+     </style>
+
+     <style name="myText" parent="@android:style/TextAppearance">
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_margin">10dp</item>
+         <item name="android:textSize">20sp</item>
+         <item name="android:textAllCaps">false</item>
+         <item name="android:gravity">start</item>
+         <item name="android:textColor">@android:color/black</item>
+         <item name="android:background">@android:color/transparent</item>
+         <item name="android:visibility">visible</item>
+         <item name="android:clickable">false</item>
+         <item name="android:focusable">false</item>
+         <item name="android:focusableInTouchMode">false</item>
+     </style>
+
+     <style name="myCheckBox" parent="@android:style/TextAppearance">
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:textSize">20sp</item>
+         <item name="android:layout_margin">10dp</item>
+     </style>
+
+ </resources>

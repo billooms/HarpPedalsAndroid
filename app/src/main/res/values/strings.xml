@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">HarpPedals</string>
+
+    <string name="chordText">A# Harmonic Minor Scale</string>
+    <string name="glissButtonText">Play Gliss</string>
+    <string name="scaleText">[A#, B#, C#, D#, E#, F#, G#]</string>
+    <string name="keyText">D# harmonic minor</string>
+    <string name="playScaleButton">Play</string>
+    <string name="setKeyButton">Pedals:Key</string>
+    <string name="setTonicButton">Pedals:Tonic</string>
+    <string name="setV7Button">Pedals:V7</string>
+    <string name="chordNameText">C Major</string>
+    <string name="add2Button">add 2</string>
+    <string name="add4Button">add 4</string>
+    <string name="sus4Button">sus4</string>
+    <string name="add6Button">add 6</string>
+    <string name="playButton">Play</string>
+    <string name="notesText">C D E F G</string>
+    <string name="setChordButton">Pedals:Chord</string>
+    <string name="keySigIconText">Icon showing the key signature</string>
+    <string name="aFlat">A&#x266D;</string>
+    <string name="aNatural">A&#x266E;</string>
+    <string name="aSharp">A&#x266F;</string>
+    <string name="bFlat">B&#x266D;</string>
+    <string name="bNatural">B&#x266E;</string>
+    <string name="bSharp">B&#x266F;</string>
+    <string name="cFlat">C&#x266D;</string>
+    <string name="cNatural">C&#x266E;</string>
+    <string name="cSharp">C&#x266F;</string>
+    <string name="dFlat">D&#x266D;</string>
+    <string name="dNatural">D&#x266E;</string>
+    <string name="dSharp">D&#x266F;</string>
+    <string name="eFlat">E&#x266D;</string>
+    <string name="eNatural">E&#x266E;</string>
+    <string name="eSharp">E&#x266F;</string>
+    <string name="fFlat">F&#x266D;</string>
+    <string name="fNatural">F&#x266E;</string>
+    <string name="fSharp">F&#x266F;</string>
+    <string name="gFlat">G&#x266D;</string>
+    <string name="gNatural">G&#x266E;</string>
+    <string name="gSharp">G&#x266F;</string>
+    <string name="swipeChord"><![CDATA[----Chord--->]]></string>
+    <string name="swipeKey"><![CDATA[<---Key----]]></string>
+    <string name="swipe">SWIPE</string>
+</resources>

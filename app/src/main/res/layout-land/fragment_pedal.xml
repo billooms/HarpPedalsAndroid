@@ -1,0 +1,111 @@
+<RelativeLayout
+    android:id="@+id/activity_harp_pedal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.billooms.harppedals.pedals.PedalFragment">
+
+    <LinearLayout
+        android:id="@+id/pedals"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.billooms.harppedals.pedals.PedalRadioGroup style="@style/pedalGroup" android:id="@+id/pedalD">
+            <RadioButton android:text="@string/dFlat" style="@style/pedalButton" android:id="@+id/flatD"/>
+            <RadioButton android:text="@string/dNatural" style="@style/pedalButton" android:id="@+id/natD" android:checked="true"/>
+            <RadioButton android:text="@string/dSharp" style="@style/pedalButton" android:id="@+id/sharpD"/>
+        </com.billooms.harppedals.pedals.PedalRadioGroup>
+
+        <com.billooms.harppedals.pedals.PedalRadioGroup style="@style/pedalGroup" android:id="@+id/pedalC">
+            <RadioButton android:text="@string/cFlat" style="@style/pedalButton" android:id="@+id/flatC"/>
+            <RadioButton android:text="@string/cNatural" style="@style/pedalButton" android:id="@+id/natC" android:checked="true"/>
+            <RadioButton android:text="@string/cSharp" style="@style/pedalButton" android:id="@+id/sharpC"/>
+        </com.billooms.harppedals.pedals.PedalRadioGroup>
+
+        <com.billooms.harppedals.pedals.PedalRadioGroup style="@style/pedalGroup" android:id="@+id/pedalB">
+            <RadioButton android:text="@string/bFlat" style="@style/pedalButton" android:id="@+id/flatB"/>
+            <RadioButton android:text="@string/bNatural" style="@style/pedalButton" android:id="@+id/natB" android:checked="true"/>
+            <RadioButton android:text="@string/bSharp" style="@style/pedalButton" android:id="@+id/sharpB"/>
+        </com.billooms.harppedals.pedals.PedalRadioGroup>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <com.billooms.harppedals.pedals.PedalRadioGroup style="@style/pedalGroup" android:id="@+id/pedalE">
+            <RadioButton android:text="@string/eFlat" style="@style/pedalButton" android:id="@+id/flatE"/>
+            <RadioButton android:text="@string/eNatural" style="@style/pedalButton" android:id="@+id/natE" android:checked="true"/>
+            <RadioButton android:text="@string/eSharp" style="@style/pedalButton" android:id="@+id/sharpE"/>
+        </com.billooms.harppedals.pedals.PedalRadioGroup>
+
+        <com.billooms.harppedals.pedals.PedalRadioGroup style="@style/pedalGroup" android:id="@+id/pedalF">
+            <RadioButton android:text="@string/fFlat" style="@style/pedalButton" android:id="@+id/flatF"/>
+            <RadioButton android:text="@string/fNatural" style="@style/pedalButton" android:id="@+id/natF" android:checked="true"/>
+            <RadioButton android:text="@string/fSharp" style="@style/pedalButton" android:id="@+id/sharpF"/>
+        </com.billooms.harppedals.pedals.PedalRadioGroup>
+
+        <com.billooms.harppedals.pedals.PedalRadioGroup style="@style/pedalGroup" android:id="@+id/pedalG">
+            <RadioButton android:text="@string/gFlat" style="@style/pedalButton" android:id="@+id/flatG"/>
+            <RadioButton android:text="@string/gNatural" style="@style/pedalButton" android:id="@+id/natG" android:checked="true"/>
+            <RadioButton android:text="@string/gSharp" style="@style/pedalButton" android:id="@+id/sharpG"/>
+        </com.billooms.harppedals.pedals.PedalRadioGroup>
+
+        <com.billooms.harppedals.pedals.PedalRadioGroup style="@style/pedalGroup" android:id="@+id/pedalA">
+            <RadioButton android:text="@string/aFlat" style="@style/pedalButton" android:id="@+id/flatA"/>
+            <RadioButton android:text="@string/aNatural" style="@style/pedalButton" android:id="@+id/natA" android:checked="true"/>
+            <RadioButton android:text="@string/aSharp" style="@style/pedalButton" android:id="@+id/sharpA"/>
+        </com.billooms.harppedals.pedals.PedalRadioGroup>
+    </LinearLayout>
+
+
+    <Spinner style="@style/mySpinner" android:id="@+id/alternateSpinner"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/pedals"
+        android:layout_toEndOf="@+id/pedals"/>
+
+    <EditText style="@style/myText" android:id="@+id/chordText" android:text="@string/chordText"
+        android:inputType="textMultiLine"
+        android:lines = "4"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:layout_below="@+id/alternateSpinner"
+        android:layout_alignLeft="@+id/alternateSpinner"
+        android:layout_alignStart="@+id/alternateSpinner"/>
+
+    <Button style="@style/myButton" android:id="@+id/playGlissButton" android:text="@string/glissButtonText"
+        android:layout_below="@+id/chordText"
+        android:layout_alignLeft="@+id/alternateSpinner"
+        android:layout_alignStart="@+id/alternateSpinner"/>
+
+    <TextView style="@style/myText" android:id="@+id/swipe" android:text="@string/swipe"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/colorPrimary"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"/>
+
+    <TextView style="@style/myText" android:text="@string/swipeKey"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/colorPrimary"
+              android:layout_alignParentBottom="true"
+              android:layout_toRightOf="@id/swipe"
+              android:layout_toEndOf="@id/swipe"/>
+
+    <TextView style="@style/myText" android:text="@string/swipeChord"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/colorPrimary"
+              android:layout_alignParentBottom="true"
+              android:layout_toLeftOf="@id/swipe"
+              android:layout_toStartOf="@id/swipe"/>
+
+</RelativeLayout>
