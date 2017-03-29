@@ -11,7 +11,7 @@ import static com.billooms.harppedals.chords.Interval.P4;
 /**
  * Diatonic sevenths and other common sevenths.
  *
- * @author Bill Ooms. Copyright 2016 Studio of Bill Ooms. All rights reserved.
+ * @author Bill Ooms. Copyright 2017 Studio of Bill Ooms. All rights reserved.
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
