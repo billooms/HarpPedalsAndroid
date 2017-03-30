@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">HarpPedals</string>
+    <string name="description">Program for pedal harpists to assist with chords and keys.</string>
 
     <string name="chordText">A# Harmonic Minor Scale</string>
     <string name="glissButtonText">Play Gliss</string>
